@@ -1,0 +1,12 @@
+{% extends 'professor/index.html' %}
+<html>
+
+    <body>
+	{% block content %}
+		{% for professor in professors %}
+		
+			<li>{{ professor }}</li>
+		{% endfor %}
+	{% endblock %}
+    </body>
+</html>
