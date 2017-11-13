@@ -1,0 +1,13 @@
+{% extends 'sections/index.html' %}
+<html>
+
+    <body>
+	{% block content %}
+		{% for section in sections %}
+			Course Number: {{ section.number }}
+			<li>{{ section.professor }}</li>
+			<li>{{ section.course.name }}</li>
+		{% endfor %}
+	{% endblock %}
+    </body>
+</html>

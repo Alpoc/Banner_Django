@@ -1,0 +1,12 @@
+{% extends 'courses/index.html' %}
+<html>
+
+    <body>
+	{% block content %}
+		{% for course in courses %}
+			Course Number: {{ course.number }}
+			<li>{{ course.name }}</li>
+		{% endfor %}
+	{% endblock %}
+    </body>
+</html>
